@@ -1,0 +1,30 @@
+<%- include('header'); -%>
+
+<body>
+  <div class="box" id="heading">
+    <h1> <%= listTitle %> </h1>
+    <h2> Things to do:</h2>
+  </div>
+
+  <div class="box">
+    <% for (var i=0; i<newtask.length; i++) { %>
+    <div class="item">
+      <input type="checkbox" name="" value="">
+      <p> <%=newtask[i]%> </p>
+    </div>
+    <% } %>
+
+    <form class="item new" action="/" method="post">
+      <input type="text" name="nexttask" autocomplete="off" placeholder="new task">
+      <button class="addtask" type="submit" name="button" value=<%= listTitle %>> + </button>
+    </form>
+    <form class="" action="/empty" method="post">
+      <!-- <input type="hidden" name="empty" value=""> -->
+      <button class="reset" type="submit" name="button" value=<%=listTitle %>> Reset </button>
+    </form>
+
+  </div>
+</body>
+<%- include('footer'); -%>
+
+</html>
