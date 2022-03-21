@@ -10,7 +10,7 @@ const date = require(__dirname + "/date.js");
 var item = [];
 var workItem = [];
 
-mongoose.connect('mongodb+srv://johansaputro3:johanjohan634630@cluster0.vj0vy.mongodb.net/toDoDatabase?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://<user>:<pass>0@cluster0.vj0vy.mongodb.net/toDoDatabase?retryWrites=true&w=majority')
 // mongoose.connect('mongodb://localhost:27017/toDoDatabase');
 
 app.use(express.static('public'))
